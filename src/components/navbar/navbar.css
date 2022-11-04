@@ -1,0 +1,37 @@
+nav {
+  width: 100vw;
+  background-color: #C1E3EE;
+}
+
+.nav-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  filter: invert(9%) sepia(12%) saturate(2646%) hue-rotate(149deg) brightness(15%) contrast(92%);
+}
+
+.nav-content .links .nav-list {
+  display: flex;
+}
+
+.nav-content .links .nav-list .nav-item .item{
+  padding: 1rem;
+  color: #0E2229;
+}
+
+.nav-button {
+  border: 1px solid #0E2229;
+  margin-left: 7px;
+  border-radius: 3px;
+}
+
+.button-dark {
+  color: #FFD280;
+  background-color: #0E2229;
+  padding: 1rem;
+}
