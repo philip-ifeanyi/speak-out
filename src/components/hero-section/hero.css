@@ -1,4 +1,4 @@
-section {
+.herosection {
   height: 89.9vh;
   width: 100vw;
   background: url("../../assets/Landing page.png") no-repeat center center;
@@ -6,7 +6,7 @@ section {
   text-align: left;
 }
 
-span {
+.hero-text  span {
   color: #fff;
   font-weight: 700;
   line-height: 60.48px;
@@ -25,10 +25,11 @@ span {
 }
 
 .hero-text {
+  padding-left: 3rem;
   width: 50% !important;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -50,8 +51,8 @@ span {
   align-self: center;
 }
 
-button {
-  padding: 1rem 3rem;
+.hero-text button {
+  padding: 1.2rem 4rem;
   color: #FFD280;
   background-color: #0E2229;
   justify-self: flex-start;
@@ -61,7 +62,7 @@ button {
   border: 0;
 }
 
-button:hover {
+.hero-text button:hover {
   cursor: pointer;
   transform: scale(0.98);
 }

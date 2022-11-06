@@ -1,11 +1,18 @@
 import React from 'react';
+// import { useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 import './hero.css'
 import HeroImage from '../../assets/landing pg.png'
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const handleSubmit = () => {
+    navigate('/register');
+  }
+
   return (
-    <section>
+    <section className='herosection'>
       <div className='hero'>
         <div className="hero-text">
           <h1><span>SPEAK </span>your <br/>mind <span>OUT!</span></h1>
@@ -16,7 +23,7 @@ const Hero = () => {
             let's help you
           </p>
 
-          <button>Get Started</button>
+          <button onClick={handleSubmit}>Get Started</button>
         </div>
 
         <div className="hero-image">

@@ -30,8 +30,17 @@ nav {
   border-radius: 3px;
 }
 
+.nav-button:hover {
+  border: 1px solid #FFD280;
+}
+
 .button-dark {
   color: #FFD280;
   background-color: #0E2229;
   padding: 1rem;
+}
+
+.button-dark:hover {
+  background-color: transparent;
+  color: #0E2229;
 }

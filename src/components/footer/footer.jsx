@@ -5,7 +5,7 @@ import './footer.css';
 const Footer = () => {
   return (
     <footer>
-      SpeakOut &copy; 2022
+      SpeakOUT &copy; 2022
     </footer>
   )
 }
