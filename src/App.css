@@ -5,6 +5,10 @@
   font-family: 'Sora', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 li {
   list-style: none;
 }

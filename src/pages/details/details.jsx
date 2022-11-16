@@ -26,7 +26,7 @@ const Details = () => {
           </section>
 
           <section className="loginForm">
-            <h1>Login</h1>
+            <h1>Continue</h1>
             <form action="" method="post" onSubmit={handleSubmit(onSubmit)}>
               <div className="email">
                 <label htmlFor="department">Department</label>
@@ -52,7 +52,7 @@ const Details = () => {
                 {errors.number && <p role="alert">{errors.number.message}</p>}
                 <span>forgot number? <NavLink to='/resetpassword'>Click here</NavLink></span>
               </div>
-              <input type="submit" value='Login'/>
+              <input type="submit" value='Continue'/>
             </form>
           </section>
         </main>

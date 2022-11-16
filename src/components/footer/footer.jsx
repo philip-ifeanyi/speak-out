@@ -4,7 +4,7 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='main-footer'>
       SpeakOUT &copy; 2022
     </footer>
   )

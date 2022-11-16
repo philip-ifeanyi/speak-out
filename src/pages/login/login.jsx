@@ -16,7 +16,7 @@ const Login = () => {
         <header className="header">
           <NavLink to='/'>
             <img src={backArrow} alt="back" />
-            &nbsp; Back
+            &nbsp; <span>Back</span>
           </NavLink>
         </header>
         <main className="loginArea">

@@ -1,0 +1,37 @@
+.sideBar {
+  background: url('../../assets/navigation panel (left).png') no-repeat center center/cover;
+  padding: 2rem;
+  height: 100%;
+}
+
+.sideBar .dashLogo {
+  margin-bottom: 4rem;
+}
+
+.sideBar .dashLinks {
+  margin-bottom: 12rem;
+}
+
+.sideBar .dashLinks ul li a{
+  display: flex;
+  align-items: flex-end;
+  color: #DAEEF5;
+  padding-bottom: 1rem;
+}
+
+.sideBar .dashLinks ul li a img {
+  padding-right: 0.5rem;
+  width: 30px;
+}
+
+.sideBar .bottomDashLink a {
+  display: flex;
+  align-items: flex-end;
+  color: #DAEEF5;
+  padding-bottom: 1rem;
+}
+
+.sideBar .bottomDashLink a img {
+  padding-right: 0.5rem;
+  width: 30px;
+}

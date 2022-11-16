@@ -1,0 +1,7 @@
+.main-footer {
+  /* background: rgba(218, 238, 245, 0.3); */
+  background: linear-gradient(to right, #9C8EA9, 50%, #8B88AD);
+  /* 9c8ea9 8b88ad */
+  text-align: center;
+  padding: 1rem 0;
+}

@@ -82,7 +82,7 @@ const Register = () => {
                 />
                 {errors.password && <p role="alert" tyle={{color: 'red', 'font-size': '12px'}}>{errors.password.message}</p>}
               </div>
-              <input type="submit" value='Login'/>
+              <input type="submit" value='Register'/>
             </form>
           </section>
         </main>
