@@ -9,7 +9,7 @@ import Draft from '../../assets/icons/draft.svg'
 import Settings from '../../assets/icons/settings.svg'
 import Logout from '../../assets/icons/logout.svg'
 
-const Sidebar = () => {
+const Sidebar = ({children}) => {
   return (
     <div className='sideBar'>
       <div className="dashLogo">
@@ -17,6 +17,7 @@ const Sidebar = () => {
       </div>
       <div className="dashLinks">
         <ul>
+        {children}
           <li>
             <NavLink to='/dashboard/complaints'>
               <img src={Complaint} alt="Complaint link logo" />

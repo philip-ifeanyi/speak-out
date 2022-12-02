@@ -6,7 +6,8 @@ import Support from './pages/support/support';
 import Login from './pages/login/login'; 
 import Register from './pages/register/register';
 import Details from './pages/details/details';
-import Dashboard from './pages/dashboard/dashboard';
+// import Dashboard from './pages/dashboard/dashboard';
+import PrivateRoutes from './routes/PrivateRoutes';
 
 function App() {
   return (
@@ -37,9 +38,10 @@ function App() {
           path='/register/details'
           element={<Details />}
         />
-        <Route path='/dashboard' element={<Dashboard />}>
-
-        </Route>
+        <Route 
+          path="*"
+          element={<PrivateRoutes/>}
+        />
       </Routes>
     </div>
   );
