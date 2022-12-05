@@ -1,10 +1,9 @@
 import React from 'react'
 
-import './footer.css';
 
 const Footer = () => {
   return (
-    <footer className='main-footer'>
+    <footer className='main-footer text-sm text-center py-2'>
       SpeakOUT &copy; 2022
     </footer>
   )

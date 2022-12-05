@@ -1,0 +1,88 @@
+.mainArea {
+  background: url('../../assets/background image.png') no-repeat center center/cover;
+  height: 100vh;
+  padding: 0 2rem;
+}
+
+.mainArea .container {
+  padding-top: 2rem;
+}
+
+.mainArea .container h2 {
+  color: #FFF;
+}
+
+.mainArea .container .hello {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.mainArea .container .hello .search {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainArea .container .hello .search input {
+  background: #DAEEF5;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  height: 2rem;
+  text-align: right;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.mainArea .container .userDetails {
+  background: #DAEEF5;
+  border-radius: 5px;
+  display: flex;
+  padding: 10px;
+}
+
+.mainArea .container .userDetails img {
+  margin: 1rem;
+  margin-right: 2rem;
+}
+
+.mainArea .container .userDetails .aboutUser {
+  width: 81%;
+  border-radius: 5px;
+  background: #FFEDCC;
+  padding: 12px 3rem 0 3rem;
+}
+
+.mainArea .container .userDetails .aboutUser li {
+  list-style: disc;
+  font-size: 18px;
+  padding-bottom: 0.5rem;
+}
+
+.mainArea .container .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.mainArea .container .buttons .dash-btn {
+  font-size: 1.3rem;
+  width: 33%;
+  border-radius: 7px;
+  height: 2.5rem;
+  font-weight: bold;
+  background: #FFEDCC;
+  outline: 0;
+  border: 0;
+}
+
+.mainArea .container .buttons .dash-btn:hover {
+  cursor: pointer;
+  font-size: 1.28rem;
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../../components/footer/footer'
 import Navbar from '../../components/navbar/navbar'
-import SlideShow from '../../components/swiper'
+// import SlideShow from '../../components/swiper'
 
 import './support.css'
 import Location from '../../assets/icons/location.svg';

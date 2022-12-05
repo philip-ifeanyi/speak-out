@@ -18,3 +18,11 @@ a {
   font-size: 16px;
   line-height: 20.16px;
 }
+
+.herosection {
+  background: url("./assets/Landing page.png") no-repeat center center/cover;
+}
+
+.main-footer {
+  background: linear-gradient(to right, #9C8EA9, 50%, #8B88AD);
+}

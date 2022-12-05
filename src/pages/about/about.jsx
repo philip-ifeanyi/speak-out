@@ -40,22 +40,22 @@ const About = () => {
             <h2>What we are known for</h2>
             <div className="textGrid">
               <div className="box">
-                <img src={PeopleIcon} alt="people-icon" />
+                <img src={PeopleIcon} alt="people-icon" width='60px'/>
                 <h4>Work Atmosphere</h4>
                 <p>We help promote a better and safer workplace atmosphere</p>
               </div>
               <div className="box">
-                <img src={MegaIcon} alt="speakout-icon" />
+                <img src={MegaIcon} alt="speakout-icon" width='60px'/>
                 <h4>Freedom</h4>
                 <p>Our users are given that freedom to pour out whetever is bothering them.</p>
               </div>
               <div className="box">
-                <img src={MailIcon} alt="mail-icon" />
+                <img src={MailIcon} alt="mail-icon" width='60px'/>
                 <h4>Feedback</h4>
                 <p>Our users receive adequate feedback during the process of sorting their issues</p>
               </div>
               <div className="box">
-                <img src={PersonIcon} alt="happy person-icon" />
+                <img src={PersonIcon} alt="happy person-icon" width='60px'/>
                 <h4>Happiness</h4>
                 <p>We bridge the gap between students, lecturer and the student government</p>
               </div>
