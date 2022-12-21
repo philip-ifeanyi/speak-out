@@ -1,24 +1,28 @@
 import React from 'react'
-// import { useState } from 'react'
+import { useState } from 'react'
 
 import MESSAGES from '../../pages/dashboard/dummyData'
 import Message from './message'
 
 const MessageList = () => {
-  // const [unfiltered, setfiltered] = useState
+  const [messages, setMessages] = useState(MESSAGES)
 
   const filterSent = (e) => {
     const result = MESSAGES.filter(com => com.status === 'Sent');
     
-    console.log(result)
+    setMessages(result)
   }
 
   const filterPending = () => {
-
+    const result = MESSAGES.filter(com => com.status === 'Pending');
+    
+    setMessages(result)
   }
 
   const filterSolved = () => {
-
+    const result = MESSAGES.filter(com => com.status === 'Solved');
+    
+    setMessages(result)
   }
   return (
     <div>
@@ -29,7 +33,7 @@ const MessageList = () => {
       </div>
       <div className='rounded-lg bg-white/30 overflow-auto lg:h-80 md:h-64'>
         {
-          MESSAGES
+          messages
             .map(({ id, ...otherProps }) => (
               <Message key={id} {...otherProps} />
             ))

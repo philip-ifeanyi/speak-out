@@ -19,9 +19,9 @@ const Sidebar = ({ children }) => {
         <div className="dashLinks">
           <ul>
             <li>
-              <NavLink to='/dashboard/complaints'>
+              <NavLink to='/dashboard/complaint'>
                 <img src={Complaint} alt="Complaint link logo" />
-                <span className='sideLink'>Complaints</span>
+                <span className='sideLink'>Complaint</span>
               </NavLink>
             </li>
             <li>

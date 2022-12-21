@@ -1,0 +1,1 @@
+export const BaseURL = "https://speakout-server.onrender.com"

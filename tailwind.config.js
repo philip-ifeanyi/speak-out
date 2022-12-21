@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       colors: {
         
+      },
+      backgroundImage: {
+        'dashboard': "url('./assets/background image.png')",
       }
     },
   },

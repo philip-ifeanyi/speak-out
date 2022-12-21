@@ -1,15 +1,39 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
+import { BaseURL } from '../../utils/constant';
+import { useNavigate } from "react-router-dom";
 
 import backArrow from '../../assets/icons/Left Arrow.svg';
-// import './login.css'
+// import '../login/login.css'
 
 const Register = () => {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
-  console.log(watch('email'));
 
+  const navigate = useNavigate();
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const onSubmit = async data => {
+    const body = {
+      email: data.email,
+      firstName: data.firstName,
+      lastName: data.lastName,
+      password: data.password,
+    }
+    try {
+      const { data } = await axios.post(`${BaseURL}/users`, body, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        }
+      })
+
+      
+
+      navigate('/login');
+    } catch (error) {
+      console.log(error)
+    }
+  }
   return (
     <div className='loginPage'>
       <div className="container">
@@ -34,17 +58,18 @@ const Register = () => {
                   type="text"
                   name="firstName"
                   placeholder="Kami"
-                  {...register("firstName", {required: "First Name is required"})}
-                  aria-invalid={errors.firstName ? "true" : "false"} 
+                  {...register("firstName", { required: "First Name is required" })}
+                  aria-invalid={errors.firstName ? "true" : "false"}
                 />
                 {errors.firstName && <p
                   role="alert"
-                  style={{color: 'red',
+                  style={{
+                    color: 'red',
                     'font-size': '12px'
                   }}
-                  >
-                    {errors.firstName?.message}
-                  </p>}
+                >
+                  {errors.firstName?.message}
+                </p>}
               </div>
 
               <div className="lastName">
@@ -53,10 +78,10 @@ const Register = () => {
                   type="text"
                   name="lastName"
                   placeholder="Cole"
-                  {...register("lastName", {required: "Last Name is required"})}
-                  aria-invalid={errors.lastName ? "true" : "false"} 
+                  {...register("lastName", { required: "Last Name is required" })}
+                  aria-invalid={errors.lastName ? "true" : "false"}
                 />
-                {errors.lastName && <p role="alert" style={{color: 'red', 'font-size': '12px'}}>{errors.lastName?.message}</p>}
+                {errors.lastName && <p role="alert" style={{ color: 'red', 'font-size': '12px' }}>{errors.lastName?.message}</p>}
               </div>
 
               <div className="email">
@@ -65,10 +90,10 @@ const Register = () => {
                   type="email"
                   name="email"
                   placeholder="kamicole12@gmail.com"
-                  {...register("email", {required: "Email is required"})}
-                  aria-invalid={errors.email ? "true" : "false"} 
+                  {...register("email", { required: "Email is required" })}
+                  aria-invalid={errors.email ? "true" : "false"}
                 />
-                {errors.email && <p role="alert" style={{color: 'red', 'font-size': '12px'}}>{errors.email?.message}</p>}
+                {errors.email && <p role="alert" style={{ color: 'red', 'font-size': '12px' }}>{errors.email?.message}</p>}
               </div>
 
               <div className="password">
@@ -78,17 +103,18 @@ const Register = () => {
                   name="password"
                   placeholder="password"
                   {...register("password")}
-                  aria-invalid={errors.password ? "true" : "false"} 
+                  aria-invalid={errors.password ? "true" : "false"}
                 />
-                {errors.password && <p role="alert" tyle={{color: 'red', 'font-size': '12px'}}>{errors.password.message}</p>}
+                {errors.password && <p role="alert" tyle={{ color: 'red', 'font-size': '12px' }}>{errors.password.message}</p>}
               </div>
-              <input type="submit" value='Register'/>
+              <input type="submit" value='Register' />
             </form>
           </section>
         </main>
       </div>
     </div>
   )
+
 }
 
 export default Register;
